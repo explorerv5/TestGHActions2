@@ -13,6 +13,7 @@ import AppCenterAnalytics
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 // test merge when github action not build 3
+// try to push to main (it not permitted by github branch rule)
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
