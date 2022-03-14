@@ -1,0 +1,48 @@
+#on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+#  push:
+#    branches: [ release/*/appcenter ]
+#  pull_request:
+#    branches: [ release/*/appcenter ]
+
+  # Allows you to run this workflow manually from the Actions tab
+#on:
+#  workflow_dispatch:
+#    inputs:
+#      message:
+#        description: 'Hua salut :) Message'
+#        required: false
+#        default: 'No message :)'
+
+name: Launch builds
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: 'Message to the PO to help him test the feature'
+        required: false
+        default: 'No message left by the developer to help you test :('
+      preprod:
+        description: 'Do you want to generate a preprod build? (true/false)'
+        required: false
+        default: 'false'
+      prod:
+        description: 'Do you want to generate a prod build? (true/false)'
+        required: false
+        default: 'false'
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: macos-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script - appcenter 3
+        run: echo Hello, world! and appcenter_3

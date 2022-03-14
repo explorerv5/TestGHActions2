@@ -33,6 +33,7 @@
 /* Begin PBXFileReference section */
 		0FE91D47F737278D6BDB7824 /* Pods_TestGHActions1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestGHActions1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A060C627DB0E070093F943 /* main.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = main.yml; path = .github/workflows/main.yml; sourceTree = "<group>"; };
+		16A060C827DB909B0093F943 /* appcenter.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = appcenter.yml; path = .github/workflows/appcenter.yml; sourceTree = "<group>"; };
 		16BF26A227C49FFF000E4AA3 /* TestGHActions1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGHActions1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BF26A527C49FFF000E4AA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16BF26A727C49FFF000E4AA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				16A060C627DB0E070093F943 /* main.yml */,
+				16A060C827DB909B0093F943 /* appcenter.yml */,
 				16BF26A427C49FFF000E4AA3 /* TestGHActions1 */,
 				16BF26BB27C4A000000E4AA3 /* TestGHActions1Tests */,
 				16BF26A327C49FFF000E4AA3 /* Products */,
