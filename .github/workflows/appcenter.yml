@@ -6,13 +6,30 @@
 #    branches: [ release/*/appcenter ]
 
   # Allows you to run this workflow manually from the Actions tab
+#on:
+#  workflow_dispatch:
+#    inputs:
+#      message:
+#        description: 'Hua salut :) Message'
+#        required: false
+#        default: 'No message :)'
+
+name: Launch builds
 on:
   workflow_dispatch:
     inputs:
       message:
-        description: 'Hua salut :) Message'
+        description: 'Message to the PO to help him test the feature'
         required: false
-        default: 'No message :)'
+        default: 'No message left by the developer to help you test :('
+      preprod:
+        description: 'Do you want to generate a preprod build? (true/false)'
+        required: false
+        default: 'false'
+      prod:
+        description: 'Do you want to generate a prod build? (true/false)'
+        required: false
+        default: 'false'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
