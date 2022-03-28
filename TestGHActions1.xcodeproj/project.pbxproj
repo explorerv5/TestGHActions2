@@ -45,6 +45,7 @@
 		16BF26B827C4A000000E4AA3 /* TestGHActions1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGHActions1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16BF26BC27C4A000000E4AA3 /* TestGHActions1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestGHActions1Tests.swift; sourceTree = "<group>"; };
 		16BF26D527C4A058000E4AA3 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		16C7831227F1A56D004C2446 /* hua.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = hua.yml; path = .github/workflows/hua.yml; sourceTree = "<group>"; };
 		2C678626FB5A58C11D5719A7 /* Pods-TestGHActions1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGHActions1.release.xcconfig"; path = "Target Support Files/Pods-TestGHActions1/Pods-TestGHActions1.release.xcconfig"; sourceTree = "<group>"; };
 		44C3F0F5F898DA1FC116FA3F /* Pods-TestGHActions1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGHActions1.debug.xcconfig"; path = "Target Support Files/Pods-TestGHActions1/Pods-TestGHActions1.debug.xcconfig"; sourceTree = "<group>"; };
 		4B402C93C81BA9223FB36900 /* Pods-TestGHActions1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGHActions1Tests.release.xcconfig"; path = "Target Support Files/Pods-TestGHActions1Tests/Pods-TestGHActions1Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		16BF269927C49FFF000E4AA3 = {
 			isa = PBXGroup;
 			children = (
+				16C7831227F1A56D004C2446 /* hua.yml */,
 				16A060C627DB0E070093F943 /* main.yml */,
 				16A060C827DB909B0093F943 /* appcenter.yml */,
 				16BF26A427C49FFF000E4AA3 /* TestGHActions1 */,
