@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         AppCenter.start(withAppSecret: "c0af44f9-9860-4e38-a824-0336a04815b6",
                         services: [Analytics.self,
                                    Crashes.self])
+        // test pr to develop
         return true
     }
 
