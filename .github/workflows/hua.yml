@@ -1,0 +1,23 @@
+name: huatest
+on:
+  pull_request:
+    branches: [develop]
+
+jobs:
+  build:
+    if github.event.pull_request.merged == true
+    runs-on: macos-latest
+    steps:
+     - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+     - name: Run a one-line script
+       run: echo Hello, world!
+
+     - name: pod install
+       run: pod install
+       
+     - name: Test
+       run: |
+           xcodebuild clean test -workspace "TestGHActions1Tests.xcworkspace" -scheme "TestGHActions1Tests" -destination "platform=iOS Simulator,name=iPhone 12 Pro,OS=latest" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+
